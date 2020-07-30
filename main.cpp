@@ -11,40 +11,40 @@ using namespace std;
 
 int main() {
 
-    int num1 {}, num2 {};
+    int val1 {}, val2 {};
     int max {}, min {}, sum {}, diff {}, prod {};
     double ratio {};
 
     cout << "Please enter the first integer: ";
-    cin >> num1;
+    cin >> val1;
 
     cout << "Please enter the second integer: ";
-    cin >> num2;
+    cin >> val2;
 
-    if (num1 > num2) {
-        max = num1;
-        min = num2;
+    if (val1 > val2) {
+        max = val1;
+        min = val2;
     }
 
-    if ( num2 > num1){
-        min = num1;
-        max = num2;
+    if (val2 > val1){
+        min = val1;
+        max = val2;
     }
 
-    if (num1 != num2) {
+    if (val1 != val2) {
         cout << "Larger Number: " << max << endl;
         cout << "Small Number: " << min << endl;
     }
 
-    sum = num1 + num2;
-    diff = num1 - num2;
-    prod = num1 * num2;
-    ratio = static_cast<double> (num1) / num2;
+    sum = val1 + val2;
+    diff = val1 - val2;
+    prod = val1 * val2;
+    ratio = static_cast<double> (val1) / val2;
 
-    cout << "Sum of " << num1 << " and " << num2 << ": " << sum << endl;
-    cout << "Difference of " << num1 << " and " << num2 << ": " << diff << endl;
-    cout << "Product of " << num1 << " and " << num2 << ": " << prod << endl;
-    cout << "Ratio of " << num1 << " and " << num2 << ": " << ratio << endl;
+    cout << "Sum of " << val1 << " and " << val2 << ": " << sum << endl;
+    cout << "Difference of " << val1 << " and " << val2 << ": " << diff << endl;
+    cout << "Product of " << val1 << " and " << val2 << ": " << prod << endl;
+    cout << "Ratio of " << val1 << " and " << val2 << ": " << ratio << endl;
 
     return 0;
 }
